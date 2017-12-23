@@ -127,7 +127,7 @@ elif action == 'clearCache':
 elif action == 'clearCacheSearch':
     from resources.lib.indexers import navigator
     navigator.navigator().clearCacheSearch()
-    
+
 elif action == 'infoCheck':
     from resources.lib.indexers import navigator
     navigator.navigator().infoCheck('')
@@ -152,21 +152,9 @@ elif action == 'movieSearchnew':
     from resources.lib.indexers import movies
     movies.movies().search_new()
 
-elif action == 'movieSearchterm':
-    from resources.lib.indexers import movies
-    movies.movies().search_term(name)
-
-elif action == 'moviePerson':
-    from resources.lib.indexers import movies
-    movies.movies().person()
-
 elif action == 'movieGenres':
     from resources.lib.indexers import movies
     movies.movies().genres()
-
-elif action == 'movieLanguages':
-    from resources.lib.indexers import movies
-    movies.movies().languages()
 
 elif action == 'movieCertificates':
     from resources.lib.indexers import movies
@@ -175,10 +163,6 @@ elif action == 'movieCertificates':
 elif action == 'movieYears':
     from resources.lib.indexers import movies
     movies.movies().years()
-
-elif action == 'moviePersons':
-    from resources.lib.indexers import movies
-    movies.movies().persons(url)
 
 elif action == 'movieUserlists':
     from resources.lib.indexers import movies
@@ -207,10 +191,6 @@ elif action == 'tvSearchnew':
 elif action == 'tvSearchterm':
     from resources.lib.indexers import tvshows
     tvshows.tvshows().search_term(name)
-    
-elif action == 'tvPerson':
-    from resources.lib.indexers import tvshows
-    tvshows.tvshows().person()
 
 elif action == 'tvGenres':
     from resources.lib.indexers import tvshows
@@ -220,17 +200,9 @@ elif action == 'tvNetworks':
     from resources.lib.indexers import tvshows
     tvshows.tvshows().networks()
 
-elif action == 'tvLanguages':
-    from resources.lib.indexers import tvshows
-    tvshows.tvshows().languages()
-
 elif action == 'tvCertificates':
     from resources.lib.indexers import tvshows
     tvshows.tvshows().certifications()
-
-elif action == 'tvPersons':
-    from resources.lib.indexers import tvshows
-    tvshows.tvshows().persons(url)
 
 elif action == 'tvUserlists':
     from resources.lib.indexers import tvshows
